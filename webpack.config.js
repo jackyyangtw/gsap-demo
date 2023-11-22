@@ -4,7 +4,7 @@ const HtmlReplaceWebpackPlugin = require('html-replace-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const TerserPlugin = require('terser-webpack-plugin');
-
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = (env, argv) => {
     let mode = !env.WEBPACK_SERVE ? 'production':'development';
@@ -22,6 +22,12 @@ module.exports = (env, argv) => {
             hot: true
         },
         plugins: [
+            new CompressionPlugin({
+                algorithm: 'gzip',
+                test: /\.js$|\.css$|\.html$/,
+                threshold: 10240,
+                minRatio: 0.8
+            }),
             new BundleAnalyzerPlugin(),
             // HtmlWebpackPlugin 插件会在打包结束后，自动生成一个 html 文件，并把打包生成的 js 自动引入到这个 html 文件中
             new HtmlWebpackPlugin({
