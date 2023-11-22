@@ -1,6 +1,8 @@
 import '@master/css';
 import { init, Style } from '@master/css';
-import { gsap, ScrollTrigger } from "gsap/all";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 Style.extend('breakpoints', {
     width400: '400px',
