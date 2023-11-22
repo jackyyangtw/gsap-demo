@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "compression-webpack-plugin": "^10.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-replace-webpack-plugin": "^2.6.0",
+    "html-webpack-plugin": "^5.5.3",
+    "string-replace-loader": "^3.1.0",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.10.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "@master/css": "^1.37.8",
+    "gsap": "^3.12.2"
+  },
+  "scripts": {
+    "dev": "npx webpack serve --open",
+    "build": "webpack --mode production"
+  },
+  "sideEffects": false
+}

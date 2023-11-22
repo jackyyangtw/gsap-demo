@@ -1,0 +1,85 @@
+@charset "utf-8";
+/****************Import>>> Open Sans: regular;********************/
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../_fonts/open-sans/OpenSans-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../_fonts/open-sans/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../_fonts/open-sans/OpenSans-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../_fonts/open-sans/OpenSans-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+/* @font-face {
+    font-family: 'Open Sans';
+    src: url('../_fonts/OpenSans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+} */
+/****************Import>>> Open Sans: italic;********************/
+/*
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../_fonts/OpenSans-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../_fonts/OpenSans-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../_fonts/OpenSans-SemiBoldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../_fonts/OpenSans-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+ @font-face {
+    font-family: 'Open Sans';
+    src: url('../_fonts/OpenSans-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+ */
+/*********************** WEBSITE: font-family *************************************/
+body section td,
+body section li,
+body section div,
+body section p,
+body section input,
+body section select,
+body section h1,
+body section h2,
+body section h3,
+body section h4,
+body section h5,
+body section h6,
+body section button {
+  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+}
